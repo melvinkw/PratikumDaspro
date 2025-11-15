@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class square15 {
     public static void main(String[] args) {
         Scanner sc =new Scanner(System.in);
-        System.out.println("Masukkan nilai N = ");
+        System.out.println("Enter the value of N = ");
         int N = sc.nextInt();
 
         for (int iOuter=1; iOuter <=N; iOuter++){

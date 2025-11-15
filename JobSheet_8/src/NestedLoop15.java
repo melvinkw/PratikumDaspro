@@ -4,9 +4,9 @@ import java.util.Scanner;
 public class NestedLoop15 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in).useLocale(Locale.US);
-        double[][] temps = new double[2][7]; // 5 cities, 7 days
+        double[][] temps = new double[2][7];
 
-        // fill array (same as before)
+        
         for (int i = 0; i < temps.length; i++) {
             System.out.println("City: " + i);
             for (int j = 0; j < temps[i].length; j++) {
@@ -16,7 +16,6 @@ public class NestedLoop15 {
             System.out.println();
         }
 
-        // display using foreach and compute average per city
         System.out.println("=== Temperatures (After) ===");
         int cityIndex = 0;
         for (double[] cityTemps : temps) {

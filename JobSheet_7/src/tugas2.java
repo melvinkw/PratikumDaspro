@@ -45,8 +45,6 @@ public class tugas2 {
 
         System.out.println("Total pendapatan parkir hari ini: Rp "+total);
 
-        sc.close();
-
-        
+        sc.close();        
     }    
 }

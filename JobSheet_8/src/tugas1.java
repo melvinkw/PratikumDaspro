@@ -7,6 +7,9 @@ public class tugas1 {
         int N = sc.nextInt();
 
         for (int i = 1; i <= N; i++) {
+            for (int s = 0; s < N -1; s++) {
+                System.out.print(" ");
+            }
             for (int j = 1; j <= i; j++) {
                 System.out.print(j);
             }

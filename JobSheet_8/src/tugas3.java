@@ -6,13 +6,16 @@ public class tugas3 {
         System.out.print("Enter N (min 3): ");
         int N = sc.nextInt();
 
-        for (int i = 1; i <= N; i++) {
-            for (int j = 1; j <= N; j++) {
-                System.out.print(N + " ");
+        for (int baris = 1; baris <= N; baris++) {
+            for (int kolom = 1; kolom <= N; kolom++) {
+                if (baris == 1 || baris == N || kolom == 1 || kolom == N) {
+                    System.out.print(N + " ");
+                } else {
+                    System.out.print("  "); 
+                }
             }
-            System.out.println();
+            System.out.println(); 
         }
-
         sc.close();
     }
 }

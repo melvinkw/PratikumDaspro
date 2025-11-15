@@ -20,6 +20,7 @@ public class siakadWhile15 {
 
             if (nilai > 80 && nilai <=100) {
                 System.out.println("The grade of the " + (i+1)+" student is A");
+                System.out.println("Good, keep it up!");
             } else if (nilai > 73 && nilai <=80) {
                 System.out.println("The grade of the " + (i+1)+" student is B+");
             } else if (nilai > 65 && nilai <=73) {

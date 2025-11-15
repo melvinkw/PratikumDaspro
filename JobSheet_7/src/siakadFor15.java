@@ -6,6 +6,7 @@ public class siakadFor15 {
 
         double grade, highest = 0, lowest = 100;
         int n;
+        int passed = 0, failed = 0;
 
         System.out.println("Masukkan ingin berapa kali mengulang: ");
         n = sc.nextInt();
@@ -19,10 +20,18 @@ public class siakadFor15 {
             if (grade < lowest) {
                 lowest = grade;
             }
+
+             if (grade >= 60) {
+                passed++;
+            } else {
+                failed++;
+            }
         }
 
         System.out.println("The highest grade: "+highest);
         System.out.println("The lowest grade: "+lowest);
+        System.out.println("Number of students passed: " + passed);
+        System.out.println("Number of students failed: " + failed);
 
         sc.close();
     }

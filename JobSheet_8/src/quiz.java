@@ -9,7 +9,7 @@ public class quiz {
         char menu = 'y';
 
         do {
-            int number = rand.nextInt(10) + 1; // random 1..10
+            int number = rand.nextInt(10) + 1;
             Boolean success = false;
 
             System.out.println("I'm thinking of a number between 1 and 10. Try to guess it!");
@@ -18,15 +18,14 @@ public class quiz {
                 System.out.print("Guess the number (1-10): ");
                 int answer;
 
-                // handle non-integer input gracefully
                 try {
                     answer = input.nextInt();
                 } catch (InputMismatchException e) {
-                    input.nextLine(); // clear bad input
+                    input.nextLine(); 
                     System.out.println("Please enter a valid integer between 1 and 10.");
                     continue;
                 }
-                input.nextLine(); // consume newline
+                input.nextLine(); 
 
                 if (answer < 1 || answer > 10) {
                     System.out.println("Out of range! Enter between 1 and 10.");
