@@ -6,32 +6,32 @@ public class searchNilai {
         Scanner sc = new Scanner(System.in);
         int input = 0;
         int key = 0 ;
-        int hasil = 0;
+        int hasil = -1;
 
-        System.out.println("Masukkan banyaknya nilai yang akan di input: ");
+        System.out.print("Enter the number of array elements: ");
         input = sc.nextInt();
 
         int[] arrNilai = new int [input];
 
         for (int i = 0; i < arrNilai.length; i++) {
-            System.out.println("Masukkan nilai mahasiswa ke-"+ (i+1) + " : ");
+            System.out.print("Enter the array element-"+ (i+1) + " : ");
             arrNilai[i] = sc.nextInt();
         }
 
-        for (int i = 0; i < arrNilai.length; i++) {
+        System.out.print("Enter the key u want to search for: ");
+        key = sc.nextInt();
 
-            System.out.println("Masukkan nilai yang ingin di cari: ");
-            key = sc.nextInt();
-            if (key == arrNilai[i]) {
-                hasil = i+1;
+        for(int i = 0; i < arrNilai.length; i++) {
+            if (arrNilai[i] == key) {
+                hasil = i;
                 break;
             }
         }
-
-        System.out.println();
-        System.out.println("Nilai "+ key +" ketemu di indeks ke-" + hasil);
-        System.out.println();
-
+        if (hasil != -1) {
+            System.out.println("The key in the array is located at index position " + hasil);
+        } else {
+            System.out.println("Key not found.");
+        }
         sc.close();
     }
 }
